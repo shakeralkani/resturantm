@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    <style>
+      .swiper {
+  width: 82%;
+  height: 70vh;
+  margin-top: -90px;
+  border-radius: 20px;
+
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+.main{
+            margin-top: 50px;
+        }
+
+
+    </style>
+
+
+  </head>
+  <body>
+
+    <div class="log" id="log" style="direction: rtl;">
+      <div class="header">
+        <button id="close">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="none"
+            stroke="#9a9a9a"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m7 7l10 10M7 17L17 7"
+          />
+        </svg>
+      </button>
+        <h4>تسجيل الدخول</h4>
+      </div>
+      <div class="face-go">
+        <button class="face">المتابعة باستخدام قيسبوك<img src="images/facebook (1).svg"></button><br>
+        <button class="google">.المتابعة باستخدام جوجل<img src="images/search.svg"></button>
+      </div>
+      <div class="or">
+        <p>أو</p>
+        <div class="line"></div>
+      </div>
+      <div class="inp">
+      <input id="inp1" type="text" placeholder="أدخل الإيميل"><br>
+      <input id="inp2" type="password" placeholder="كلمة السر">
+      <button id="show"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#dededf" d="M12 9a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5a5 5 0 0 1 5-5a5 5 0 0 1 5 5a5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5Z"/></svg></button>
+      <button id="hidden"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><path fill="#dededf" d="M8 11c-1.65 0-3-1.35-3-3s1.35-3 3-3s3 1.35 3 3s-1.35 3-3 3Zm0-5c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2Z"/><path fill="#dededf" d="M8 13c-3.19 0-5.99-1.94-6.97-4.84a.442.442 0 0 1 0-.32C2.01 4.95 4.82 3 8 3s5.99 1.94 6.97 4.84c.04.1.04.22 0 .32C13.99 11.05 11.18 13 8 13ZM2.03 8c.89 2.4 3.27 4 5.97 4s5.07-1.6 5.97-4C13.08 5.6 10.7 4 8 4S2.93 5.6 2.03 8Z"/><path fill="#dededf" d="M14 14.5a.47.47 0 0 1-.35-.15l-12-12c-.2-.2-.2-.51 0-.71c.2-.2.51-.2.71 0l11.99 12.01c.2.2.2.51 0 .71c-.1.1-.23.15-.35.15Z"/></svg></button>  
+      <a href="#">نسيت كلمة السر؟</a>
+      <button id="log-in">تسجيل الدخول</button>
+        <div class="signup">
+          ليس لديك حساب؟ اشتراك
+        </div>
+    </div>
+    </div>
+
+    <div class="first-line">
+  <div class="d-flex align-items-center" style="height: 10px; margin-top: 30px;">
+    <div class="col-md-6 d-sm-none"></div>
+    <div class="logo"><img src="photo/logo.jpeg"></div>
+    <div class="col-md-6 col-sm-12 d-flex align-items-center justify-content-evenly">
+      <div class="login ">
+        <input type="submit" id="show-log" name="login" style="width:120px; height: 30px; border-radius: 20px 20px 20px 20px; border: none; cursor: pointer;background:#ddd;" value=" التسجيل/تسجيل الدخول" >
+    </div>
+    <button><i class="fa-regular fa-user fa-2xl"></i></button>
+    <select name="lan" id="lan">
+      <option value="arabic">عربي</option>
+      <option value="en">English</option>
+    </select>
+    <button class="sal"><i class="fa-solid fa-cart-shopping fa-2xl"></i></button>
+    <button class="options" onclick="optionsSlideShow()"><i class="fa-solid fa-bars-staggered fa-2xl"></i></button>
+    </div>
+</div>
+</div>
+<div class="options-slide" id="options-slide">
+  <button onclick="optionsSlideHide()"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+  <div class="line2"></div>
+  <div class="serching">
+    <input type="text" placeholder="ابحث عن المنتجات والخدمات والعروض">
+  </div>
+  <ul>
+    <li><a href="#">الرئيسية</a></li>
+    <li><a href="#who-are-we">الاخبار</a></li>
+    <li><a href="#product">المنتجات</a></li>
+    <li><a href="#">العروض</a></li>
+    <li><a href="#comments">المدونة</a></li><hr>
+      <input type="radio" name="" value="ar">
+       <label for="ar">عربي</label><br>
+       <input type="radio" name="" value="en">
+        <label for="en">English</label><br>
+    <li id="show-log"><a href="login.html">تسجيل الدخول</a></li>
+  </ul>
+</div>
+
+<div class="nav-head">
+  <ul>
+    <li><a href="#">الرئيسية</a></li>
+    <li><a href="#who-are-we">الاخبار</a></li>
+    <li><a href="#product">المنتجات</a></li>
+    <li><a href="#">العروض</a></li>
+    <li><a href="#comments">المدونة</a></li>
+  </ul>
+</div>
+<br>
+<br>
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">  <img src="photo/slide1.jpg"></div>
+    <div class="swiper-slide"> <img src="photo/slide2.jpg"></div>
+    <div class="swiper-slide">   <img src="photo/slide4.jpg"></div>
+
+  </div>
+  <div class="swiper-button-next" style="color: #fff;"></div>
+  <div class="swiper-button-prev" style="color: #fff;"></div>
+  <div class="swiper-pagination"></div>
+</div>
+  <input class="remo" style="height: 50px;width: 35%; background-color:#ffffffc5; border: none; border-radius: 20px; position: relative; bottom: 90px; left: 32vw; font-weight: bold;font-size: 20px; z-index: 100; padding-left: 5px;" type="text" placeholder="ابحث عن الخدمات والمنتجات والعروض.......">
+  <img class="remo" src="photo/Path 3281.png" style="position: relative;bottom: 92px;left:29vw;z-index: 100;">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+</script>
+<!-- END SLIDER SHOW-->
+
+<div class="main">
+  <center><h1 style="color:red ;margin-bottom: 50px;"> كيف تريد طلبك ؟</h1></center>
+  <div class="orders">
+ <div class="col-sm-4">
+          <div class="order">
+              <img src="photo/_x31_.svg" alt="">
+              <a href="map.html"><button>توصيل لموقعك</button></a>
+          </div>
+      </div>
+      <div class="col-sm-4">
+          <div class="order">
+              <img src="photo/dish-1.png" alt="">
+              <a href="#"><button style="margin-left: 25%;">حجز طاولة</button></a>
+          </div>
+      </div>
+      <div class="col-sm-4">
+          <div class="order">
+              <img src="photo/Group 12.svg" alt="">
+              <a href="#"><button>استلام من الفرع</button></a>
+          </div>
+      </div>
+  </div>
+</div>
+
+    <div class="menu" style="direction: rtl;">
+      <center>
+      <div class="menu-foods">
+        <h1>قائمة الطعام</h1>
+        <img src="photo/pa.png" />
+      </div>
+</center>
+      <div class="fast-foods">
+        <div class="nav1">
+          <ul>
+            <li><a href="#">الرئيسية</a> </li>
+            <li class="space"><a href="#">المنيو</a></li>
+            <li class="space2"><a href="#">العروض</a></li>
+            <li><a href="#">الوجبات</a></li>
+          </ul>
+        </div>
+        <div class="list-style">
+          <button  onclick="firstWay()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="#a80e0e" d="M160 448a32 32 0 0 1-32-32V160.064a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32V416a32 32 0 0 1-32 32H160zm448 0a32 32 0 0 1-32-32V160.064a32 32 0 0 1 32-32h255.936a32 32 0 0 1 32 32V416a32 32 0 0 1-32 32H608zM160 896a32 32 0 0 1-32-32V608a32 32 0 0 1 32-32h256a32 32 0 0 1 32 32v256a32 32 0 0 1-32 32H160zm448 0a32 32 0 0 1-32-32V608a32 32 0 0 1 32-32h255.936a32 32 0 0 1 32 32v256a32 32 0 0 1-32 32H608z"/></svg></button>
+          <button  onclick="secondWay()"><svg xmlns="http://www.w3.org/2000/svg" width="31" height="27" viewBox="0 0 24 24"><g transform="rotate(180 12 12)"><path fill="#999" d="M4 7a1 1 0 0 1 1-1h1a1 1 0 0 1 0 2H5a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h9a1 1 0 1 1 0 2h-9a1 1 0 0 1-1-1zm-5 5a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h9a1 1 0 1 1 0 2h-9a1 1 0 0 1-1-1zm-5 5a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1zm5 0a1 1 0 0 1 1-1h9a1 1 0 1 1 0 2h-9a1 1 0 0 1-1-1z"/></g></svg></button>
+        </div>
+
+        
+        <div class="product" id="product">
+          <div class="nav2" id="nav2">
+            <ul>
+              <li class="li-nav active2" id="fast-food"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 512 512"><path fill="none" stroke="#bbb" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M322 416c0 35.35-20.65 64-56 64H134c-35.35 0-56-28.65-56-64m258-80c17.67 0 32 17.91 32 40h0c0 22.09-14.33 40-32 40H64c-17.67 0-32-17.91-32-40h0c0-22.09 14.33-40 32-40"/><path fill="none" stroke="#bbb" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M344 336H179.31a8 8 0 0 0-5.65 2.34l-26.83 26.83a4 4 0 0 1-5.66 0l-26.83-26.83a8 8 0 0 0-5.65-2.34H56a24 24 0 0 1-24-24h0a24 24 0 0 1 24-24h288a24 24 0 0 1 24 24h0a24 24 0 0 1-24 24ZM64 276v-.22c0-55 45-83.78 100-83.78h72c55 0 100 29 100 84v-.22M241 112l7.44 63.97"/><path fill="none" stroke="#bbb" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M256 480h139.31a32 32 0 0 0 31.91-29.61L463 112"/><path fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="m368 112l16-64l47-16"/><path fill="none" stroke="#bbb" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M224 112h256"/></svg><span>الوجبات السريعة</span></a></li>
+              <li class="li-nav" id="grilled"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="#bbb" d="M4.45 22.85q-.35-.225-.438-.638t.138-.762L8.1 15.4q-1.575-.725-2.65-2.112T4.1 10.1q-.075-.425.238-.762T5.125 9h11.75q.475 0 .788.338t.237.762q-.275 1.8-1.35 3.188T13.9 15.4l.575.9q-.525.25-.863.5t-.737.7l-1-1.55q-.25.05-.875.05h-.45q-.225 0-.425-.05L8.15 19h5.05q.325-.9 1.088-1.45T16 17q1.25 0 2.125.875T19 20q0 1.25-.875 2.125T16 23q-.95 0-1.713-.55T13.2 21H6.85l-1 1.55q-.225.35-.637.438t-.763-.138ZM16 21q.425 0 .713-.288T17 20q0-.425-.288-.713T16 19q-.425 0-.713.288T15 20q0 .425.288.713T16 21Zm-5-7q1.5 0 2.738-.825T15.6 11H6.4q.65 1.35 1.875 2.175T11 14ZM8.95 8q-.225 0-.363-.15t-.137-.4q0-.5-.175-.913t-.6-.912q-.425-.55-.612-1.05t-.138-1.15q.025-.175.163-.3T7.425 3q.225 0 .363.15t.137.4q0 .5.175.9t.6.9q.45.575.625 1.075t.125 1.15q-.025.175-.162.3T8.95 8Zm2.5 0q-.225 0-.363-.15t-.137-.4q.025-.5-.15-.913t-.6-.912q-.45-.525-.637-1.038t-.138-1.162q.025-.175.163-.3T9.925 3q.225 0 .363.15t.137.4q0 .5.175.9t.6.9q.425.55.613 1.063t.137 1.162q-.025.175-.162.3T11.45 8Zm2.5 0q-.225 0-.363-.15t-.137-.4q.025-.5-.15-.913t-.6-.912q-.45-.525-.637-1.038t-.138-1.162q.025-.175.163-.3T12.425 3q.225 0 .363.15t.137.4q0 .5.175.9t.6.9q.425.55.613 1.063t.137 1.162q-.025.175-.162.3T13.95 8ZM11 14Z"/></svg><span>المشويات</span></a></li>
+              <li class="li-nav" id="pizza"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 20 20"><path fill="currentColor" d="M7.5 9.002a.747.747 0 1 0 0-1.495a.747.747 0 0 0 0 1.495Zm3.723 1.253a.747.747 0 1 1-1.495 0a.747.747 0 0 1 1.495 0Zm-3.719 3.253a.751.751 0 1 0 0-1.502a.751.751 0 0 0 0 1.502ZM4 3.956c0-1.095.895-2.022 2.03-1.952c4.447.274 8.347 1.77 11.402 4.687c.867.827.696 2.178-.203 2.868a302.914 302.914 0 0 1-4.225 3.203v1.74c0 .717-.555 1.5-1.5 1.5a1.57 1.57 0 0 1-.498-.08v.083c0 .713-.556 1.491-1.503 1.491c-.754 0-1.251-.496-1.426-1.05c-.548.41-1.147.856-1.682 1.254c-.99.737-2.395.03-2.395-1.2V3.956Zm7.005 10.546c0 .259.195.5.499.5c.305 0 .5-.243.5-.5v-1.994a.5.5 0 0 1 .206-.404c.78-.566 2.108-1.575 3.284-2.474C12.801 7.067 9.026 5.546 5 5.514v10.985a.5.5 0 0 0 .798.4c.786-.586 1.713-1.276 2.409-1.798a.5.5 0 0 1 .8.4v.504c0 .247.19.492.496.492a.49.49 0 0 0 .502-.492v-1.503a.5.5 0 0 1 1 0Zm5.614-5.735c.465-.357.5-.993.122-1.354c-2.857-2.727-6.52-4.15-10.772-4.412C5.45 2.969 5 3.395 5 3.956v.558c4.327.033 8.402 1.687 11.297 4.5l.322-.247Z"/></svg><span>البيتزا</span></a></li>
+              <li class="li-nav" id="salat"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><g fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 21h10m-5 0a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z"/><path d="M11.38 12a2.4 2.4 0 0 1-.4-4.77a2.4 2.4 0 0 1 3.2-2.77a2.4 2.4 0 0 1 3.47-.63a2.4 2.4 0 0 1 3.37 3.37a2.4 2.4 0 0 1-1.1 3.7a2.51 2.51 0 0 1 .03 1.1M13 12l4-4"/><path d="M10.9 7.25A3.99 3.99 0 0 0 4 10c0 .73.2 1.41.54 2"/></g></svg><span>السلطات</span></a></li>
+              <li class="li-nav"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 48 48"><g fill="none" stroke="#bbb" stroke-width="4"><path stroke-linecap="round" stroke-linejoin="round" d="M15 24h18l-1.8 20H16.8L15 24Z"/><rect width="26" height="6" x="11" y="18" rx="3"/><path d="M24 8c-5.523 0-10 4.477-10 10h20c0-5.523-4.477-10-10-10Z"/><path stroke-linecap="round" d="m28 4l-2 4"/></g></svg><span>المشروبات</span></a></li>
+              <li class="li-nav"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 14 14"><g fill="none" stroke="#bbb" stroke-linecap="round" stroke-linejoin="round"><rect width="13" height="8" x=".5" y="5.5" rx="1"/><path d="M3 3.5v-2m4 2v-2m4 2v-2m2.5 8.5H13a2 2 0 0 1-2-2a2 2 0 0 1-4 0a2 2 0 0 1-4 0a2 2 0 0 1-2 2H.5"/></g></svg><span>الحلويات</span></a></li>
+            </ul>
+          </div>
+
+
+          <div class="show" id="showScroll">
+            <div class="row card" id="card2">
+             
+          
+        </div>
+      </div>
+    </div>
+
+ 
+    <div class="who-are-we" id="who-are-we">
+      <center>
+        <div class="title">
+          <h1>من نحن ؟</h1>
+          <img style="width: 25%;" src="photo/Brush_1_.png" />
+        </div>
+      </center>
+      <div class="explain">
+      <div class="col-sm-6 pic">
+        <img
+          class="up"
+          src="photo/beautiful-young-healthy-woman-holds-tasty-big-burger-with-beef-cutlet-concept-nourishing-food_152625-788.png"
+        />
+        <img class="down" src="photo/Rectangle 268.png" />
+      </div>
+        <div class="col-sm-6 tex">
+          <img src="photo/Group 1346.png" alt="" />
+          <p>
+            <span style="padding: 10px 0;">:الجودة العالمية</span><br>
+            ﺗﻌﺘﻤﺪ‌ ‌ﺳﻴﺎﺳﺔ‌ ‌اﻟﺠﻮدة‌ ‌ﻓﻲ‌ ‌ﺷﺮﻛﺔ‌ ‌ا‌ ﻟﻤﺤﺪودة‌ ‌ﻋﻠﻰ‌ ‌ﺗﻘﺪﻳﻢ‌
+            ‌ﻣﻨﺘﺠﺎت‌ ‌آﻣﻨﺔ‌ ‌وﺳﻠﻴﻤﺔ‌ ‌وﻋﺎﻟﻴﺔ‌ ‌اﻟﺠﻮدة‌ ‌واﻟﻘﻴﻤﺔ‌ ‌ﺑﺼﻔﺔ‌ ‌ﻣﺴﺘﻤﺮة‌
+            ‌ﻹرﺿﺎء‌ اﺣﺘﻴﺎﺟﺎت‌ ‌ﻋﻤﻼﺋﻬﺎ‌ ‌وﺗﺄﻛﻴﺪ‌ ‌ﺛﻘﺘﻬﻢ‌
+          </p>
+          <img src="photo/Group 1396.png" alt="">
+          <button>اقرأ المزيد</button>
+        </div>
+      </div>
+    </div>
+<div class="comments" id="comments">
+  <center><h3 style="margin:50px 0 50px 40px; font-weight: bold;"> ماذا يقول الناس عنا</h3></center>
+  <div class="col-sm-6 comment">
+      <div class="col-sm-3 prof">
+          <img src="photo/Group 5215.png">
+      </div>
+      <div class="col-sm-4 nm-da">
+          <p><span>Cody Fisher </span><br>may,20,2023</p>
+      </div>
+      <div class="col-sm-4 rating">
+          <img src="photo/Union 10.png">
+      </div>
+      <div class="col-sm-12 comm">
+          <p>
+              ﺗﻌﺘﻤﺪ‌ ‌ﺳﻴﺎﺳﺔ‌ ‌اﻟﺠﻮدة‌ ‌ﻓﻲ‌ ‌ﺷﺮﻛﺔ‌ ‌ ‌اﻟﻤﺤﺪودة‌ ‌ﻋﻠﻰ‌ ‌ﺗﻘﺪﻳﻢ‌ ‌ﻣﻨﺘﺠﺎت‌ ‌آﻣﻨﺔ‌ ‌وﺳﻠﻴﻤﺔ‌ ‌وﻋﺎﻟﻴﺔ‌ ‌اﻟﺠﻮدة‌ ‌واﻟﻘﻴﻤﺔ‌ ‌ﺑﺼﻔﺔ‌ ‌ﻣﺴﺘﻤﺮة‌ ‌ﻹرﺿﺎء‌ اﺣﺘﻴﺎﺟﺎت‌ ‌ﻋﻤﻼﺋﻬﺎ‌ ‌وﺗﺄﻛﻴﺪ‌ ‌ﺛﻘﺘﻬﻢ‌
+              </p>
+      </div>
+  </div>
+  <div class="col-sm-6 comment">
+      <div class="col-sm-3 prof">
+          <img src="photo/Group 5215.png">
+      </div>
+      <div class="col-sm-4 nm-da">
+          <p><span>Cody Fisher </span><br>may,20,2023</p>
+      </div>
+      <div class="col-sm-4 rating">
+          <img src="photo/Union 10.png">
+      </div>
+      <div class="col-sm-12 comm">
+          <p>
+              ﺗﻌﺘﻤﺪ‌ ‌ﺳﻴﺎﺳﺔ‌ ‌اﻟﺠﻮدة‌ ‌ﻓﻲ‌ ‌ﺷﺮﻛﺔ‌ ‌ ‌اﻟﻤﺤﺪودة‌ ‌ﻋﻠﻰ‌ ‌ﺗﻘﺪﻳﻢ‌ ‌ﻣﻨﺘﺠﺎت‌ ‌آﻣﻨﺔ‌ ‌وﺳﻠﻴﻤﺔ‌ ‌وﻋﺎﻟﻴﺔ‌ ‌اﻟﺠﻮدة‌ ‌واﻟﻘﻴﻤﺔ‌ ‌ﺑﺼﻔﺔ‌ ‌ﻣﺴﺘﻤﺮة‌ ‌ﻹرﺿﺎء‌ اﺣﺘﻴﺎﺟﺎت‌ ‌ﻋﻤﻼﺋﻬﺎ‌ ‌وﺗﺄﻛﻴﺪ‌ ‌ﺛﻘﺘﻬﻢ‌
+              </p>
+      </div>
+  </div>
+  <div class="col-sm-6 comment">
+      <div class="col-sm-3 prof">
+          <img src="photo/Group 5215.png">
+      </div>
+      <div class="col-sm-4 nm-da">
+          <p><span>Cody Fisher </span><br>may,20,2023</p>
+      </div>
+      <div class="col-sm-4 rating">
+          <img src="photo/Union 10.png">
+      </div>
+      <div class="col-sm-12 comm">
+          <p>
+              ﺗﻌﺘﻤﺪ‌ ‌ﺳﻴﺎﺳﺔ‌ ‌اﻟﺠﻮدة‌ ‌ﻓﻲ‌ ‌ﺷﺮﻛﺔ‌ ‌ ‌اﻟﻤﺤﺪودة‌ ‌ﻋﻠﻰ‌ ‌ﺗﻘﺪﻳﻢ‌ ‌ﻣﻨﺘﺠﺎت‌ ‌آﻣﻨﺔ‌ ‌وﺳﻠﻴﻤﺔ‌ ‌وﻋﺎﻟﻴﺔ‌ ‌اﻟﺠﻮدة‌ ‌واﻟﻘﻴﻤﺔ‌ ‌ﺑﺼﻔﺔ‌ ‌ﻣﺴﺘﻤﺮة‌ ‌ﻹرﺿﺎء‌ اﺣﺘﻴﺎﺟﺎت‌ ‌ﻋﻤﻼﺋﻬﺎ‌ ‌وﺗﺄﻛﻴﺪ‌ ‌ﺛﻘﺘﻬﻢ‌
+              </p>
+      </div>
+  </div>
+  <div class="col-sm-6 comment">
+      <div class="col-sm-3 prof">
+          <img src="photo/Group 5215.png">
+      </div>
+      <div class="col-sm-4 nm-da">
+          <p><span>Cody Fisher </span><br>may,20,2023</p>
+      </div>
+      <div class="col-sm-4 rating">
+          <img src="photo/Union 10.png">
+      </div>
+      <div class="col-sm-12 comm">
+          <p>
+              ﺗﻌﺘﻤﺪ‌ ‌ﺳﻴﺎﺳﺔ‌ ‌اﻟﺠﻮدة‌ ‌ﻓﻲ‌ ‌ﺷﺮﻛﺔ‌ ‌ ‌اﻟﻤﺤﺪودة‌ ‌ﻋﻠﻰ‌ ‌ﺗﻘﺪﻳﻢ‌ ‌ﻣﻨﺘﺠﺎت‌ ‌آﻣﻨﺔ‌ ‌وﺳﻠﻴﻤﺔ‌ ‌وﻋﺎﻟﻴﺔ‌ ‌اﻟﺠﻮدة‌ ‌واﻟﻘﻴﻤﺔ‌ ‌ﺑﺼﻔﺔ‌ ‌ﻣﺴﺘﻤﺮة‌ ‌ﻹرﺿﺎء‌ اﺣﺘﻴﺎﺟﺎت‌ ‌ﻋﻤﻼﺋﻬﺎ‌ ‌وﺗﺄﻛﻴﺪ‌ ‌ﺛﻘﺘﻬﻢ‌
+              </p>
+      </div>
+  </div>
+ <center> <img src="photo/Group 1396.png"><br>
+  <button>جيع التعليقات</button>
+  </center>
+</div>
+  
+<div class="footer">
+  <img src="photo/background-1.png" style="position: absolute; width: 100%;">
+  <div class="col-sm-4" style="padding-top: 15%;">
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+    <div class="nav3">
+      <ul>
+        <li><a href="#"><img src="photo/49.png"></a></li>
+        <li><a href="#"><img src="photo/50.png"></a></a></li>
+        <li><a href="#"><img src="photo/51.png"></a></a></li>
+        <li><a href="#"><img src="photo/52.png"></a></a></li>
+        <li><a href="#"><img src="photo/53.png"></a></a></li>
+        <li><a href="#"><img src="photo/52.png"></a></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-sm-3 navs"  style="padding-top: 15%;">
+    <div class="col-sm-6">
+      <div class="nav4">
+      <ul>
+        <li><a href="#">About</a></li>    
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">ContactUs</a></li>
+      </ul>
+    </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="nav4">
+      <ul>
+        <li><a href="#">Wishlist</a></li>  
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Order Tracking</a></li>
+        <li><a href="#">Warranty and Services</a></li>
+      </ul>
+    </div>
+    </div>
+    <p>© 2023, Raghed Alfout. All rights reserved</p>
+
+  </div>
+  <div class=" col-sm-3 sub" style="direction: ltr;">
+    <img src="photo/Mask Group 8.png" style="background: rgb(211, 133, 17); rotate: -1deg;">
+    <form action="">
+      <input type="text" name="text" required placeholder="full name">
+      <input type="text" name="num" required placeholder="phone number">
+      <input  type="text" name="mes" required placeholder="message" style="padding-bottom: 50px;">
+      <input type="checkbox" required style="position: absolute; right: 120px; bottom: 54px;" ><p style="margin-left: 40px;">I Aggre With All Condition</p>
+      <input type="submit" style="width: 120px; padding: 10px 0;border: none;border-radius: 10px;color: rgb(211, 133, 17);margin-left: 50px;">
+    </form>
+  </div>
+</div>
+
+
+    <script src="js/api.js"></script>
+    <script src="js/show.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

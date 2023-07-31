@@ -1,0 +1,125 @@
+.log{
+    
+    
+    width: 400px;
+    height: 100vh;
+    background: #fff;
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #9a9a9a;
+    padding-bottom: 1.2rem;
+}
+.header h4{
+    margin: 1.3rem 0 0 3rem;
+    font-size: 24px;
+}
+.header button{
+    border: none;
+    background: #fff;
+}
+.header svg{
+    margin: 1.3rem 0 0 0;
+}
+.face-go {
+    margin-right: 5.5%;
+    margin-top: 5%;
+}
+.face-go button{
+    padding: 10px 100px;
+    width: 95%;
+    margin-top: 25px;
+    border: none;
+    border-radius: 2px;
+}
+.face{
+    background: #4568B2;
+    color: #fff;
+    
+}
+.face img{
+    width: 18px;
+    margin:0 7px 3px 0;
+}
+.google img{
+    width: 18px;
+    margin:0 7px 3px 0;
+}
+.or{
+    margin: 40px 0;
+    position: relative;
+    height: 30px;
+}
+.or p{
+    position: absolute;
+    text-align: center;
+    width: 40px;
+    padding: 5px;
+    background: #ffffff;
+
+    z-index: 1000;
+    top: -50%;
+    right: 45%;
+}
+.line{
+    margin-top: 8%;
+    width: 100%;
+    height: 1px;
+    background: #9a9a9a;
+}
+.inp{
+    position: relative;
+}
+.inp input{
+    margin-right: 4%;
+    margin-bottom: 30px;
+}
+.inp #inp1{
+    width: 90%;
+    padding: 10px 5px 10px 0;
+}
+.inp #inp2{
+    width: 90%;
+    padding: 10px 5px 10px 0;
+}
+#show{
+    position: absolute;
+    left: 8%;
+    bottom: 24.5%;
+    border: none;
+    background: #fff;
+
+}
+
+#hidden{
+    position: absolute;
+    left: 8%;
+    bottom: 24.5%;
+    border: none;
+    background: #fff;
+    display: none;
+}
+.inp a{
+    position: absolute;
+    top: 90%;
+    left: 68%;
+}
+#log-in{
+    padding: 10px 100px;
+    width: 88%;
+    position: absolute;
+    top: 130%;
+    left: 5%;
+    background: #004B80;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.signup{
+    position: absolute;
+    top: 165%;
+    right: 37%;
+}

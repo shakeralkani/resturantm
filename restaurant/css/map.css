@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav-head ul {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  background: #ddddddb7;
+  border-radius: 10px;
+  border-bottom: 2px solid #ad0d0d;
+  margin: auto;
+  margin-bottom: 80px;
+  margin-top: 50px;
+  z-index: 1000;
+}
+.nav-head ul li {
+  display: inline;
+  padding: 10px 20px 10px 20px;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  margin: 0 6% 0 6%;
+  border-radius: 10px 10px 0 0;
+  transition: 0.5s;
+}
+.nav-head ul li:hover {
+  background: #ad0d0d;
+}
+.nav-head ul li:hover a{
+  color: #fff;
+}
+.nav-head ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  transition: 0.5s;
+}
+  @media only screen and (max-width:767px){
+    .nav-head ul li{
+      margin: 0 -2% 0 -2%;
+      padding: 10px 15px 10px 15px;
+    }
+     .card{
+      margin: 20px 0 0 3px;
+     }
+  }
+
+
+
+
+
+  iframe{
+    margin-left: 5%;
+    border-radius: 10px;
+  }
+
+
+
+
+.cards{
+  margin-top: 30px;
+  font-weight: bold;
+}
+.card{
+  width: 10px;
+}
+.status{
+  float: left;
+}
+
+.status h3{
+  margin: 60px 0 0 45px;
+}
+.status h4{
+  margin: 40px 0 0 50px;
+  padding: 7px 0 7px 15px;
+  background: #707070;
+  width: 60px;
+  border-radius: 10px;
+}
+
+  .card img{
+    width: 200px;
+    margin-left: 50px;
+  }
+
+  .card button{
+    padding: 10px 130px 10px 130px;
+    margin: 20px 0 0 50px;
+    border-radius: 20px;
+    border: none;
+    background: #f3b838;
+    width: 320px;
+    transition: 0.5s;
+  }
+  .card button:hover{
+    background: #A80E0E;
+    color: #fff;
+  }
